@@ -11,7 +11,6 @@ type Store struct {
 }
 
 func NewStore(path string) (*Store, error) {
-
 	db, err := bolt.Open(path, 0600, nil)
 	if err != nil {
 		return nil, err
